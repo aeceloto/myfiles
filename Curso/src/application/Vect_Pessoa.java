@@ -37,13 +37,13 @@ public class Vect_Pessoa {
 		for (int i =0; i<pessoa.length ; i++) {
 			if (pessoa[i].getIdade() < 16) {
 				nmenores++;
-				System.out.println((String)pessoa[i].getNome());
+				System.out.println(pessoa[i]);
 			}
 		}
 		double percentualMenores = ((double)nmenores * 100)/n;
 		
 		System.out.printf("\nAltura Media = %.2f%n", alturaMedia);
-		System.out.printf("Percentual de Menores = %.2f%n", percentualMenores);
+		System.out.printf("Percentual de Menores = %.0f%n", percentualMenores);
 		
 		
 		
